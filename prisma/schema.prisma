@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Shop {
+  id          String   @id
+  name        String
+  accessToken String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  bundles     Bundle[]
+}
+
+model Bundle {
+  id              String          @id @default(cuid())
+  shopId          String
+  shop            Shop            @relation(fields: [shopId], references: [id])
+  title           String
+  description     String?
+  imageUrl        String?
+  originalPrice   Float
+  discountedPrice Float
+  isActive        Boolean         @default(true)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  bundleProducts  BundleProduct[]
+
+  @@index([shopId])
+}
+
+model BundleProduct {
+  id        String   @id @default(cuid())
+  bundleId  String
+  bundle    Bundle   @relation(fields: [bundleId], references: [id])
+  productId String
+  quantity  Int      @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([bundleId, productId])
+  @@index([bundleId])
+  @@index([productId])
+}
