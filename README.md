@@ -101,55 +101,49 @@ Estimated hours for a junior developer with 3 years of MERN/Next.js experience, 
 ### Week 1 (40 hours)
 
 #### Day 1-2: Project Setup & Authentication (16 hours)
-| Task | Hours | Priority | Notes |
-|------|-------|----------|-------|
-| Supabase Setup | 2 | High | Quick setup, basic connection |
-| Shopify Partner Dashboard | 2 | High | App creation, API keys |
-| Development Environment | 2 | High | Local setup, env variables |
-| Shopify OAuth Flow | 6 | High | Basic auth implementation |
-| Session Management | 4 | High | Essential security setup |
-| **Day 1-2 Total** | **16** | | |
+| Task | Hours | Priority | Implementation Details |
+|------|-------|----------|----------------------|
+| Supabase Setup | 2 | High | • Create new Supabase project<br>• Set up PostgreSQL database<br>• Configure database connection string<br>• Create initial tables via Prisma<br>• Set up database migrations<br>• Test database connection<br>• Configure database security rules |
+| Shopify Partner Dashboard | 2 | High | • Create new app in Partner Dashboard<br>• Configure app URLs (development/production)<br>• Set up app scopes (products, script_tags)<br>• Generate API credentials<br>• Configure app proxy settings<br>• Set up app extensions<br>• Configure app embed settings |
+| Development Environment | 2 | High | • Install Shopify CLI<br>• Set up environment variables<br>• Configure development store<br>• Set up ngrok for local development<br>• Configure CORS settings<br>• Set up development database<br>• Configure local SSL certificates |
+| Shopify OAuth Flow | 6 | High | • Implement OAuth callback route<br>• Create session middleware<br>• Set up shop authentication<br>• Implement access token storage<br>• Create shop installation flow<br>• Handle app uninstallation<br>• Implement token refresh logic<br>• Set up error handling for auth failures |
+| Session Management | 4 | High | • Implement session storage<br>• Create session validation<br>• Set up secure cookie handling<br>• Implement session timeout<br>• Create session recovery flow<br>• Set up session encryption<br>• Implement logout functionality |
 
 #### Day 3-4: Core Features (16 hours)
-| Task | Hours | Priority | Notes |
-|------|-------|----------|-------|
-| App Navigation | 4 | High | Basic Polaris setup |
-| Bundle Management UI | 6 | High | CRUD operations |
-| Product Selection | 6 | High | Basic product search/select |
-| **Day 3-4 Total** | **16** | | |
+| Task | Hours | Priority | Implementation Details |
+|------|-------|----------|----------------------|
+| App Navigation | 4 | High | • Set up Polaris navigation<br>• Create app layout component<br>• Implement route structure<br>• Create navigation state management<br>• Set up breadcrumb navigation<br>• Implement mobile navigation<br>• Create navigation loading states |
+| Bundle Management UI | 6 | High | • Create bundle list component<br>• Implement bundle creation form<br>• Build bundle edit interface<br>• Create bundle deletion flow<br>• Implement bundle status toggle<br>• Create bundle search/filter<br>• Build bundle sorting functionality<br>• Implement pagination for bundles |
+| Product Selection | 6 | High | • Create product search component<br>• Implement product selection modal<br>• Build product quantity selector<br>• Create product variant handling<br>• Implement product image display<br>• Build product price display<br>• Create product inventory check<br>• Implement product selection validation |
 
 #### Day 5: Storefront Integration (8 hours)
-| Task | Hours | Priority | Notes |
-|------|-------|----------|-------|
-| Basic Theme Extension | 4 | High | Minimal required setup |
-| Bundle Display | 4 | High | Basic bundle display |
-| **Day 5 Total** | **8** | | |
+| Task | Hours | Priority | Implementation Details |
+|------|-------|----------|----------------------|
+| Basic Theme Extension | 4 | High | • Create app block template<br>• Set up theme app extension<br>• Implement bundle display block<br>• Create bundle CSS styles<br>• Set up theme settings<br>• Implement responsive design<br>• Create theme app embed |
+| Bundle Display | 4 | High | • Create bundle product component<br>• Implement bundle price display<br>• Build bundle image handling<br>• Create bundle description display<br>• Implement bundle availability check<br>• Build bundle add to cart button<br>• Create bundle loading states |
 
 ### Week 2 (40 hours)
 
 #### Day 6-7: Bundle Features (16 hours)
-| Task | Hours | Priority | Notes |
-|------|-------|----------|-------|
-| Bundle Creation | 6 | High | Core bundle functionality |
-| Bundle Editing | 4 | High | Basic edit operations |
-| Bundle Listing | 6 | High | List view with sorting |
-| **Day 6-7 Total** | **16** | | |
+| Task | Hours | Priority | Implementation Details |
+|------|-------|----------|----------------------|
+| Bundle Creation | 6 | High | • Implement bundle validation<br>• Create price calculation logic<br>• Build image upload handling<br>• Implement bundle saving<br>• Create bundle update logic<br>• Build bundle duplication<br>• Implement bundle versioning<br>• Create bundle error handling |
+| Bundle Editing | 4 | High | • Create bundle edit form<br>• Implement price update logic<br>• Build image update handling<br>• Create product removal flow<br>• Implement bundle status update<br>• Build edit validation<br>• Create edit history tracking |
+| Bundle Listing | 6 | High | • Implement bundle filtering<br>• Create sorting functionality<br>• Build search implementation<br>• Create pagination logic<br>• Implement bulk actions<br>• Build export functionality<br>• Create list view customization |
 
 #### Day 8-9: Cart & Inventory (16 hours)
-| Task | Hours | Priority | Notes |
-|------|-------|----------|-------|
-| Cart Integration | 8 | High | Basic cart functionality |
-| Inventory Management | 4 | Medium | Basic stock tracking |
-| Testing & Bug Fixes | 4 | High | Critical issues only |
-| **Day 8-9 Total** | **16** | | |
+| Task | Hours | Priority | Implementation Details |
+|------|-------|----------|----------------------|
+| Cart Integration | 8 | High | • Implement cart API integration<br>• Create bundle add to cart<br>• Build cart validation<br>• Implement price calculations<br>• Create cart error handling<br>• Build cart update logic<br>• Implement cart recovery<br>• Create cart analytics tracking |
+| Inventory Management | 4 | Medium | • Implement inventory checks<br>• Create stock level tracking<br>• Build inventory updates<br>• Implement low stock alerts<br>• Create inventory validation<br>• Build inventory sync logic |
+| Testing & Bug Fixes | 4 | High | • Test authentication flow<br>• Verify bundle creation<br>• Test cart integration<br>• Validate inventory updates<br>• Test theme integration<br>• Fix critical bugs<br>• Verify error handling |
 
 #### Day 10: Deployment & Polish (8 hours)
-| Task | Hours | Priority | Notes |
-|------|-------|----------|-------|
-| Fly.io Deployment | 4 | High | Basic deployment |
-| Documentation | 2 | Medium | Essential docs only |
-| Final Testing | 2 | High | Critical paths only |
-| **Day 10 Total** | **8** | | |
+| Task | Hours | Priority | Implementation Details |
+|------|-------|----------|----------------------|
+| Fly.io Deployment | 4 | High | • Set up Fly.io account<br>• Configure deployment settings<br>• Create production database<br>• Set up SSL certificates<br>• Configure environment variables<br>• Implement deployment pipeline<br>• Set up monitoring<br>• Configure backups |
+| Documentation | 2 | Medium | • Write installation guide<br>• Create user documentation<br>• Document API endpoints<br>• Write deployment guide<br>• Create troubleshooting guide<br>• Document known issues |
+| Final Testing | 2 | High | • Test production deployment<br>• Verify all critical paths<br>• Test error scenarios<br>• Validate security measures<br>• Check performance metrics<br>• Verify data integrity |
 
 ### Total Hours Breakdown
 - **Core Features (High Priority)**: 60 hours
