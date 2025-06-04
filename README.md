@@ -94,6 +94,100 @@ The app uses the following data models:
 - [ ] Write privacy policy and terms of service
 - [ ] Create marketing materials
 
+## ⏱️ Development Timesheet (2-Week Sprint)
+
+Estimated hours for a junior developer with 3 years of MERN/Next.js experience, new to Shopify development. Based on 8-hour workdays, 10 working days (80 hours total).
+
+### Week 1 (40 hours)
+
+#### Day 1-2: Project Setup & Authentication (16 hours)
+| Task | Hours | Priority | Notes |
+|------|-------|----------|-------|
+| Supabase Setup | 2 | High | Quick setup, basic connection |
+| Shopify Partner Dashboard | 2 | High | App creation, API keys |
+| Development Environment | 2 | High | Local setup, env variables |
+| Shopify OAuth Flow | 6 | High | Basic auth implementation |
+| Session Management | 4 | High | Essential security setup |
+| **Day 1-2 Total** | **16** | | |
+
+#### Day 3-4: Core Features (16 hours)
+| Task | Hours | Priority | Notes |
+|------|-------|----------|-------|
+| App Navigation | 4 | High | Basic Polaris setup |
+| Bundle Management UI | 6 | High | CRUD operations |
+| Product Selection | 6 | High | Basic product search/select |
+| **Day 3-4 Total** | **16** | | |
+
+#### Day 5: Storefront Integration (8 hours)
+| Task | Hours | Priority | Notes |
+|------|-------|----------|-------|
+| Basic Theme Extension | 4 | High | Minimal required setup |
+| Bundle Display | 4 | High | Basic bundle display |
+| **Day 5 Total** | **8** | | |
+
+### Week 2 (40 hours)
+
+#### Day 6-7: Bundle Features (16 hours)
+| Task | Hours | Priority | Notes |
+|------|-------|----------|-------|
+| Bundle Creation | 6 | High | Core bundle functionality |
+| Bundle Editing | 4 | High | Basic edit operations |
+| Bundle Listing | 6 | High | List view with sorting |
+| **Day 6-7 Total** | **16** | | |
+
+#### Day 8-9: Cart & Inventory (16 hours)
+| Task | Hours | Priority | Notes |
+|------|-------|----------|-------|
+| Cart Integration | 8 | High | Basic cart functionality |
+| Inventory Management | 4 | Medium | Basic stock tracking |
+| Testing & Bug Fixes | 4 | High | Critical issues only |
+| **Day 8-9 Total** | **16** | | |
+
+#### Day 10: Deployment & Polish (8 hours)
+| Task | Hours | Priority | Notes |
+|------|-------|----------|-------|
+| Fly.io Deployment | 4 | High | Basic deployment |
+| Documentation | 2 | Medium | Essential docs only |
+| Final Testing | 2 | High | Critical paths only |
+| **Day 10 Total** | **8** | | |
+
+### Total Hours Breakdown
+- **Core Features (High Priority)**: 60 hours
+- **Additional Features (Medium Priority)**: 12 hours
+- **Buffer/Testing**: 8 hours
+- **Total**: 80 hours
+
+### Notes on 2-Week Timeline
+1. **Priority Focus**:
+   - Focus on MVP (Minimum Viable Product) features only
+   - Defer non-essential features to future updates
+   - Use Shopify's pre-built components where possible
+
+2. **Time Optimization**:
+   - Use Shopify CLI for faster development
+   - Leverage Polaris components extensively
+   - Minimize custom styling
+   - Use existing Shopify patterns
+
+3. **Deferred Features** (for future updates):
+   - Advanced analytics
+   - Complex theme customization
+   - Detailed reporting
+   - Marketing materials
+   - App store optimization
+
+4. **Critical Path**:
+   - Authentication
+   - Bundle creation/management
+   - Basic cart integration
+   - Essential storefront display
+
+5. **Risk Mitigation**:
+   - Start with Shopify's example apps
+   - Use proven patterns
+   - Focus on core functionality first
+   - Test critical paths early
+
 ## 🚀 Getting Started
 
 ### Prerequisites
